@@ -1,0 +1,47 @@
+package com.niit.dao;
+
+import java.util.List;
+
+import com.niit.model.Order;
+import com.niit.model.Product;
+import com.niit.model.Register;
+
+public class OrderDAOImpl implements OrderDAO {
+
+	@Override
+	public boolean add(Product product, Register user, int quantity, int total) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Order> getOrderListbyname(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean remove(int orderId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removeorderbycartid(String username) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean addingproduct(String username, String productId, int quantity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updatequantity(String username, String productId, int quantity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

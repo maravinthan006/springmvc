@@ -1,0 +1,28 @@
+package com.niit.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Table(name = "Cart")
+@Component
+public class Cart {
+
+	@Id
+	private String orderid;
+	
+	private String product_id;  
+	
+	@ManyToOne
+	@JoinColumn(name = "product_id", updatable = false, insertable = false, nullable = false)
+	private Product product;
+
+	@Column
+	private String quantity;
+}

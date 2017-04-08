@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
+    
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Productview</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<jsp:include page="Header.jsp"/>
+<style>
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<p></p>
+
+<c:forEach var="productlist" items="${productlist}"> 
+<a href="productpage?productid=${productlist.id}">
+  <img src="resources/images/${productlist.id}.png" alt="${productlist.id}" style="width:150px">
+
+
+</a>
+product name: ${productlist.name }</c:forEach>
+</div></body>
+</html>

@@ -1,0 +1,13 @@
+package com.niit.dao;
+
+import com.niit.model.Cart;
+
+public class CartDAOImpl implements CartDAO {
+
+	@Override
+	public Cart getCart(int cartId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

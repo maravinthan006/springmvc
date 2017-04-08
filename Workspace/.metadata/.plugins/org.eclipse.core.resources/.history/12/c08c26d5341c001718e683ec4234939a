@@ -1,0 +1,7 @@
+package com.niit.dao;
+
+import com.niit.model.Cart;
+
+public interface OrderDAO {
+	Cart getCart(int cartId);
+}
